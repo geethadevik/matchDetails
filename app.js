@@ -137,7 +137,7 @@ app.get("/matches/:matchId/players", async (request, Response) => {
     WHERE
     match_id = ${matchId};`;
   const matchPlayers = await database.get(getMatchPlayersQuery);
-  response.send(convertPlayerDetailsObjectToResponse(matchPlayers);
+  response.send(convertPlayerDetailsObjectToResponse(matchPlayers));
     
 });
 
